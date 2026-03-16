@@ -1,0 +1,23 @@
+2025-11-10 13:37:07 | INFO | === INÍCIO DO PIPELINE DE FRAUDE ===
+2025-11-10 13:37:07 | INFO | Iniciando: data_loading.py
+2025-11-10 13:37:10 | ERROR | 2025-11-10 13:37:07 | INFO | \U0001f4c2 Verificando caminho do dataset: data\raw\creditcard.csv
+2025-11-10 13:37:08 | INFO | \u2705 Dataset carregado com sucesso — 284807 linhas, 31 colunas.
+2025-11-10 13:37:09 | WARNING | \u26a0\ufe0f 1081 registros duplicados encontrados — serão removidos.
+2025-11-10 13:37:10 | INFO | \U0001f4ca Amostra dos dados:
+2025-11-10 13:37:10 | INFO |  Time        V1        V2       V3       V4        V5        V6        V7       V8        V9       V10       V11       V12       V13       V14      V15       V16       V17       V18       V19       V20       V21       V22       V23       V24       V25       V26       V27       V28  Amount  Class
+  0.0 -1.359807 -0.072781 2.536347 1.378155 -0.338321  0.462388  0.239599 0.098698  0.363787  0.090794 -0.551600 -0.617801 -0.991390 -0.311169 1.468177 -0.470401  0.207971  0.025791  0.403993  0.251412 -0.018307  0.277838 -0.110474  0.066928  0.128539 -0.189115  0.133558 -0.021053  149.62      0
+  0.0  1.191857  0.266151 0.166480 0.448154  0.060018 -0.082361 -0.078803 0.085102 -0.255425 -0.166974  1.612727  1.065235  0.489095 -0.143772 0.635558  0.463917 -0.114805 -0.183361 -0.145783 -0.069083 -0.225775 -0.638672  0.101288 -0.339846  0.167170  0.125895 -0.008983  0.014724    2.69      0
+  1.0 -1.358354 -1.340163 1.773209 0.379780 -0.503198  1.800499  0.791461 0.247676 -1.514654  0.207643  0.624501  0.066084  0.717293 -0.165946 2.345865 -2.890083  1.109969 -0.121359 -2.261857  0.524980  0.247998  0.771679  0.909412 -0.689281 -0.327642 -0.139097 -0.055353 -0.059752  378.66      0
+2025-11-10 13:37:10 | INFO | \u2705 Teste de carregamento concluído com sucesso.
+2025-11-10 13:37:10 | INFO | \u2705 Etapa concluída: data_loading.py
+2025-11-10 13:37:10 | INFO | Iniciando: preprocessing.py
+2025-11-10 13:37:11 | ERROR | Traceback (most recent call last):
+  File "C:\DataProjects\data_science_portfolio\project_02_fraud_detection\src\preprocessing.py", line 9, in <module>
+    from sklearn.model_selection import train_test_split
+ModuleNotFoundError: No module named 'sklearn'
+2025-11-10 13:37:11 | ERROR | \u274c ERRO em preprocessing.py
+2025-11-10 13:37:11 | ERROR | Pipeline interrompido devido a falha no módulo: preprocessing.py
+2025-11-10 13:37:11 | INFO | === FIM DO PIPELINE ===
+2025-11-10 13:37:11 | INFO | Etapas concluídas com sucesso: 1/9
+2025-11-10 13:37:11 | INFO | Tempo total de execução: 0.07 minutos
+2025-11-10 13:37:11 | INFO | Log completo salvo em: logs\pipeline_log_20251110_133707.txt

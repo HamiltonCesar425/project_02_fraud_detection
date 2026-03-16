@@ -1,0 +1,17 @@
+# virtual environment
+ml_env/
+
+# python cache
+__pycache__/
+*.pyc
+
+# pytest
+.pytest_cache/
+
+# data outputs
+data/processed/
+data/raw/creditcard.csv
+
+
+# system
+.DS_Store

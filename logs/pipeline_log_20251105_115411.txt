@@ -1,0 +1,13 @@
+[11:54:11] === INÍCIO DO PIPELINE DE FRAUDE ===
+[11:54:11] Iniciando: data_loading.py
+[11:54:14] ❌ ERRO em data_loading.py
+[11:54:14] STDOUT:
+
+[11:54:14] STDERR:
+2025-11-05 11:54:14 | ERROR | Uso: python src/data_loading.py <caminho_do_arquivo.csv>
+
+[11:54:14] ❌ Pipeline interrompido devido a erro: Falha no módulo: data_loading.py
+[11:54:14] === FIM DO PIPELINE ===
+[11:54:14] Etapas concluídas com sucesso: 0/8
+[11:54:14] Tempo total de execução: 0.06 minutos
+[11:54:14] Log completo salvo em: logs\pipeline_log_20251105_115411.txt

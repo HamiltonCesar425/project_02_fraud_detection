@@ -1,0 +1,19 @@
+[12:14:11] === INÍCIO DO PIPELINE DE FRAUDE ===
+[12:14:11] Iniciando: data_loading.py
+[12:14:16] ✅ Sucesso: data_loading.py (4.80s)
+[12:14:16] 
+[12:14:16] Iniciando: preprocessing.py
+[12:14:22] ❌ ERRO em preprocessing.py
+[12:14:22] STDOUT:
+
+[12:14:22] STDERR:
+Traceback (most recent call last):
+  File "C:\Users\cesar\OneDrive\Área de Trabalho\data_science_portfolio\project_02_fraud_detection\src\preprocessing.py", line 71, in <module>
+    from src.data_loading import load_data
+ModuleNotFoundError: No module named 'src'
+
+[12:14:22] ❌ Pipeline interrompido devido a erro: Falha no módulo: preprocessing.py
+[12:14:22] === FIM DO PIPELINE ===
+[12:14:22] Etapas concluídas com sucesso: 1/8
+[12:14:22] Tempo total de execução: 0.18 minutos
+[12:14:22] Log completo salvo em: logs\pipeline_log_20251105_121411.txt

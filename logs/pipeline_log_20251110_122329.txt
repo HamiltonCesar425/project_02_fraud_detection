@@ -1,0 +1,12 @@
+2025-11-10 12:23:29 | INFO | === INÍCIO DO PIPELINE DE FRAUDE ===
+2025-11-10 12:23:29 | INFO | Iniciando: data_loading.py
+2025-11-10 12:23:29 | ERROR | Traceback (most recent call last):
+  File "C:\DataProjects\data_science_portfolio\project_02_fraud_detection\src\data_loading.py", line 16, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+2025-11-10 12:23:29 | ERROR | \u274c ERRO em data_loading.py
+2025-11-10 12:23:29 | ERROR | Pipeline interrompido devido a falha no módulo: data_loading.py
+2025-11-10 12:23:29 | INFO | === FIM DO PIPELINE ===
+2025-11-10 12:23:29 | INFO | Etapas concluídas com sucesso: 0/9
+2025-11-10 12:23:29 | INFO | Tempo total de execução: 0.0 minutos
+2025-11-10 12:23:29 | INFO | Log completo salvo em: logs\pipeline_log_20251110_122329.txt

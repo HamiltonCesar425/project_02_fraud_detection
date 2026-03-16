@@ -1,0 +1,50 @@
+2025-11-11 11:10:43 | INFO | === INÍCIO DO PIPELINE DE FRAUDE ===
+2025-11-11 11:10:43 | INFO | Iniciando: data_loading.py
+2025-11-11 11:10:50 | WARNING | Sem saída capturada do módulo: data_loading.py
+2025-11-11 11:10:50 | ERROR | 2025-11-11 11:10:47 | INFO | \U0001f4c2 Verificando caminho do dataset: data\raw\creditcard.csv
+2025-11-11 11:10:48 | INFO | \u2705 Dataset carregado com sucesso \ufffd 284807 linhas, 31 colunas.
+2025-11-11 11:10:49 | WARNING | \u26a0\ufe0f 1081 registros duplicados encontrados \ufffd ser\ufffdo removidos.
+2025-11-11 11:10:50 | INFO | \U0001f4ca Amostra dos dados:
+2025-11-11 11:10:50 | INFO |  Time        V1        V2       V3       V4        V5        V6        V7       V8        V9       V10       V11       V12       V13       V14      V15       V16       V17       V18       V19       V20       V21       V22       V23       V24       V25       V26       V27       V28  Amount  Class
+  0.0 -1.359807 -0.072781 2.536347 1.378155 -0.338321  0.462388  0.239599 0.098698  0.363787  0.090794 -0.551600 -0.617801 -0.991390 -0.311169 1.468177 -0.470401  0.207971  0.025791  0.403993  0.251412 -0.018307  0.277838 -0.110474  0.066928  0.128539 -0.189115  0.133558 -0.021053  149.62      0
+  0.0  1.191857  0.266151 0.166480 0.448154  0.060018 -0.082361 -0.078803 0.085102 -0.255425 -0.166974  1.612727  1.065235  0.489095 -0.143772 0.635558  0.463917 -0.114805 -0.183361 -0.145783 -0.069083 -0.225775 -0.638672  0.101288 -0.339846  0.167170  0.125895 -0.008983  0.014724    2.69      0
+  1.0 -1.358354 -1.340163 1.773209 0.379780 -0.503198  1.800499  0.791461 0.247676 -1.514654  0.207643  0.624501  0.066084  0.717293 -0.165946 2.345865 -2.890083  1.109969 -0.121359 -2.261857  0.524980  0.247998  0.771679  0.909412 -0.689281 -0.327642 -0.139097 -0.055353 -0.059752  378.66      0
+2025-11-11 11:10:50 | INFO | \u2705 Teste de carregamento conclu\ufffddo com sucesso.
+2025-11-11 11:10:50 | INFO | \u2705 Etapa concluída: data_loading.py
+2025-11-11 11:10:51 | INFO | Iniciando: preprocessing.py
+2025-11-11 11:11:10 | INFO | [INFO] Dataset pr\ufffd-processado salvo em: data\processed\transactions_processed.csv
+2025-11-11 11:11:10 | ERROR | 2025-11-11 11:11:00 - INFO - \U0001f4c2 Verificando caminho do dataset: ./data/raw/creditcard.csv
+2025-11-11 11:11:01 - INFO - \u2705 Dataset carregado com sucesso \ufffd 284807 linhas, 31 colunas.
+2025-11-11 11:11:02 - WARNING - \u26a0\ufe0f 1081 registros duplicados encontrados \ufffd ser\ufffdo removidos.
+2025-11-11 11:11:03 - INFO - \U0001f4ca Amostra dos dados:
+2025-11-11 11:11:03 - INFO -  Time        V1        V2       V3       V4        V5        V6        V7       V8        V9       V10       V11       V12       V13       V14      V15       V16       V17       V18       V19       V20       V21       V22       V23       V24       V25       V26       V27       V28  Amount  Class
+  0.0 -1.359807 -0.072781 2.536347 1.378155 -0.338321  0.462388  0.239599 0.098698  0.363787  0.090794 -0.551600 -0.617801 -0.991390 -0.311169 1.468177 -0.470401  0.207971  0.025791  0.403993  0.251412 -0.018307  0.277838 -0.110474  0.066928  0.128539 -0.189115  0.133558 -0.021053  149.62      0
+  0.0  1.191857  0.266151 0.166480 0.448154  0.060018 -0.082361 -0.078803 0.085102 -0.255425 -0.166974  1.612727  1.065235  0.489095 -0.143772 0.635558  0.463917 -0.114805 -0.183361 -0.145783 -0.069083 -0.225775 -0.638672  0.101288 -0.339846  0.167170  0.125895 -0.008983  0.014724    2.69      0
+  1.0 -1.358354 -1.340163 1.773209 0.379780 -0.503198  1.800499  0.791461 0.247676 -1.514654  0.207643  0.624501  0.066084  0.717293 -0.165946 2.345865 -2.890083  1.109969 -0.121359 -2.261857  0.524980  0.247998  0.771679  0.909412 -0.689281 -0.327642 -0.139097 -0.055353 -0.059752  378.66      0
+2025-11-11 11:11:03 - INFO - \U0001f527 Iniciando pr\ufffd-processamento dos dados...
+2025-11-11 11:11:03 - INFO - \U0001f4ca Dimens\ufffdo ap\ufffds remo\ufffd\ufffdo de nulos: (283726, 31)
+2025-11-11 11:11:03 - INFO - \u2705 Pr\ufffd-processamento conclu\ufffddo! Treino: (226980, 30), Teste: (56746, 30)
+2025-11-11 11:11:10 | INFO | \u2705 Etapa concluída: preprocessing.py
+2025-11-11 11:11:11 | INFO | Iniciando: feature_integration.py
+2025-11-11 11:11:26 | INFO | [INFO] Carregando dataset de transações...
+[INFO] Dataset carregado com sucesso — 283726 linhas, 31 colunas.
+[WARNING] \u26a0\ufe0f Colunas 'sender_id' e/ou 'receiver_id' ausentes — gerando IDs determinísticos.
+[INFO] Coluna de peso detectada: 'Amount'
+[INFO] Construindo grafo ponderado...
+[INFO] Grafo construído: 10000 nós e 274959 arestas.
+[INFO] Calculando métricas básicas de grafo...
+[INFO] Métricas globais: {'num_nodes': 10000, 'num_edges': 274959, 'density': 0.0054997299729973, 'avg_clustering': 0.005492164480002076}
+[INFO] \u2705 Dataset salvo com sucesso em: data\processed\transactions_with_graph_features.csv
+2025-11-11 11:11:26 | INFO | \u2705 Etapa concluída: feature_integration.py
+2025-11-11 11:11:27 | INFO | Iniciando: graph_modeling.py
+2025-11-11 11:11:28 | WARNING | Sem saída capturada do módulo: graph_modeling.py
+2025-11-11 11:11:28 | ERROR | Traceback (most recent call last):
+  File "C:\DataProjects\data_science_portfolio\project_02_fraud_detection\src\graph_modeling.py", line 38, in <module>
+    signal.signal(signal.SIGALRM, timeout_handler)
+AttributeError: module 'signal' has no attribute 'SIGALRM'. Did you mean: 'SIGABRT'?
+2025-11-11 11:11:28 | ERROR | \u274c ERRO em graph_modeling.py (retcode 1)
+2025-11-11 11:11:28 | ERROR | Pipeline interrompido devido a falha no módulo: graph_modeling.py
+2025-11-11 11:11:28 | INFO | === FIM DO PIPELINE ===
+2025-11-11 11:11:28 | INFO | Etapas concluídas: 3/9
+2025-11-11 11:11:28 | INFO | Tempo total: 0.75 minutos
+2025-11-11 11:11:28 | INFO | Log salvo em: logs\pipeline_log_20251111_111043.txt
