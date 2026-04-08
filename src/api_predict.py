@@ -92,7 +92,7 @@ def predict(transactions: List[Transaction]):
         raise HTTPException(status_code=500, detail="Modelo não carregado no servidor.")
 
     # Converte lista de objetos Transaction em DataFrame
-    df = pd.DataFrame([t.dict() for t in transactions])
+    df = pd.DataFrame([t.model_dump() for t in transactions])
     logger.info(f"📦 Recebidas {len(df)} transações para predição.")
 
     # Pré-processamento (opcional, se houver transformações)
