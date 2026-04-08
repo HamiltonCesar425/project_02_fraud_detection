@@ -34,7 +34,13 @@ O conjunto de dados utilizado neste projeto está disponível publicamente.
 
 Faça o download em:
 
-https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+---
+
+``https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud``
+
+``https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud``
+
+---
 
 Após o download, coloque o arquivo em:
 
@@ -93,7 +99,7 @@ Fraud Prediction API
 
 Clone o repositório:
 
-git clone https://github.com/HamiltonCesar425/project_02_fraud_detection.git
+git clone ``https://github.com/HamiltonCesar425/project_02_fraud_detection.git``
 
 cd project_02_fraud_detection
 
