@@ -93,8 +93,7 @@ def save_processed_dataset(df: pd.DataFrame):
     logger.info(f"Dataset pré-processado salvo em: {output_path}")
 
 
-if __name__ == "__main__":
-
+def main() -> None:
     from src.data_loading import load_data
 
     dataset_path = os.path.join("data", "raw", "creditcard.csv")
@@ -115,3 +114,7 @@ if __name__ == "__main__":
     save_processed_dataset(df_clean)
 
     logger.info("Pipeline de pré-processamento executado com sucesso.")
+
+
+if __name__ == "__main__":
+    main()

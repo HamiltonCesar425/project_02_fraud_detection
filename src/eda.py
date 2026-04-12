@@ -169,7 +169,7 @@ def plot_feature_distributions(
         plt.title(f"Histograma: {col}")
 
         plt.subplot(1, 2, 2)
-        sns.boxplot(x=df[col].dropna())
+        plt.boxplot(df[col].dropna(), orientation="horizontal")
         plt.title(f"Boxplot: {col}")
 
         plt.tight_layout()
@@ -226,7 +226,7 @@ def run_eda(
 
 # ----------------- CLI -----------------
 
-if __name__ == "__main__":
+def main(argv: Optional[list[str]] = None) -> None:
     parser = argparse.ArgumentParser(description="EDA - Project_02 Fraud Detection")
     parser.add_argument(
         "--input", required=True, help="Caminho para data/raw/creditcard.csv"
@@ -237,6 +237,10 @@ if __name__ == "__main__":
         help="Pasta para salvar figuras e relatórios",
     )
     parser.add_argument("--target", default="Class", help="Nome da coluna target")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     run_eda(args.input, args.out_dir, args.target)
+
+
+if __name__ == "__main__":
+    main()

@@ -89,22 +89,28 @@ def load_data(file_path: str) -> pd.DataFrame:
     return df
 
 
-# === Execução direta (modo independente ou pelo pipeline) ===
-if __name__ == "__main__":
-
+def main(argv: list[str] | None = None) -> int:
+    """Executa o carregamento via CLI e retorna código de saída."""
     # Caminho padrão para o pipeline automatizado
     DEFAULT_PATH = os.path.join("data", "raw", "creditcard.csv")
 
     # Se o usuário passar argumento, usa-o; senão, usa o padrão
-    file_path = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_PATH
+    argv = sys.argv[1:] if argv is None else argv
+    file_path = argv[0] if argv else DEFAULT_PATH
 
     if not os.path.exists(file_path):
         logger.error(f"❌ ERRO: arquivo '{file_path}' não encontrado.")
-        sys.exit(1)
+        return 1
 
     try:
-        data = load_data(file_path)
+        load_data(file_path)
         logger.info("✅ Teste de carregamento concluído com sucesso.")
+        return 0
     except Exception as e:
         logger.error(f"❌ Erro ao carregar dados: {e}")
-        sys.exit(1)
+        return 1
+
+
+# === Execução direta (modo independente ou pelo pipeline) ===
+if __name__ == "__main__":
+    sys.exit(main())

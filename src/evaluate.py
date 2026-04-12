@@ -115,9 +115,14 @@ def evaluate_models():
 # ---------------------------------------------------------------------------
 # 3. Execução direta
 # ---------------------------------------------------------------------------
-if __name__ == "__main__":
+def main() -> int:
     try:
         evaluate_models()
+        return 0
     except Exception as e:
         logging.error(f"❌ Erro durante a avaliação: {e}")
-        sys.exit(1)
+        return 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())
